@@ -1,30 +1,23 @@
 # Üritusele kutsumine
 Teeme veebilehe, kus on võimalik sisestatud andmete põhjal automaatselt genereerida kutse üritusele.
 
-Nõutud väljad:
-- Luua veebileht?
+Mida teha:
+- Luua veebileht
 - Kasutaja sisestused:
-  - Mis üritus?
-  - Asukoht?
-  - Aeg?
-  - Kutsutud inimese andmed?
-  - Korraldaja andmed?
-  - Lisainfo(riietus jne)?
-  - Millal külalinepeab vastama ja kuhu?
-  - Inimeste list, kest on kutsutud?
-  - Mida kaasa võtta(sõõk jook jne)?
-  - Kui andmed on sisestatud vajuta nuppu loo kaart?
-- veebilehe kasutusjuhend?
-- random valik kaarte kutsumiseks?
-- luua erinevas stiilis kaardid?
-- 
-
-
-
-- veebilehe disain?
-
-
-Kes teeb mida?
-- Tambet
-- Uku
-- Richard
+  - Mis üritus
+  - Asukoht
+  - Aeg
+  - Kutsutud inimese andmed
+  - Korraldaja andmed
+  - Lisainfo(riietus jne)
+  - Millal külaline peab vastama ja kuhu
+  - Inimeste list, kest on kutsutud
+  - Mida kaasa võtta(sõõk jook jne)
+  - Kui andmed on sisestatud vajuta nuppu loo kaart
+- veebilehe kasutusjuhend
+- random valik kaarte kutsumiseks
+- luua erinevas stiilis kaardid
+Ülesehitus
+- Võimalikult puhas, et kasutajal oleks lihtne veebilehte kasutada
+- Vähese värvilisusega, et ei oleks raske asju järgida(mitte iga värv vikerkaarest)
+- Salvestatakse kõik saadetud kaardid, mida saab eraldi lahti võtta erinevatel veebilehtedel

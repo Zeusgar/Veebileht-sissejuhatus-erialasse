@@ -7,7 +7,104 @@
     <title>Ürituse kutse</title>
 </head>
 <body>
-    <h1>Üritusele kutsumine.</h1>
-    <p>Siin saab luua üritusele kutsumise.</p>
+    <header>
+        <h1>Üritusele kutsumine.</h1>
+        <nav>
+            <a href="index.html" class="aktiivne">Loo kutse</a>
+            <a href="olemasolevadKaardid.html">Olemasolevad kaardid</a>
+            <a href="veebileheInformatsioon.html">Kasutusjuhend</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!-- Kiri kus seletab, mis väljad on kohustuslikud ja mida enam vähem tegema peaks-->
+            <p class="juhis">Täida väljad ja vajuta „Loo kaart“. Tärniga (*) märgitud väljad on kohustuslikud.</p>
+
+            <form id="kutseVorm">
+                <!-- Luuakse kohustuslikud väljad yritus asukoht ja aeg-->
+                <fieldset>
+                    <legend>Üritus</legend>
+
+                    <label for="yritus">Mis üritus? *</label>
+                    <input type="text" id="yritus" placeholder="nt Mari 30. sünnipäev" required>
+
+                    <label for="asukoht">Asukoht *</label>
+                    <input type="text" id="asukoht" placeholder="nt Tartu, Rüütli 1" required>
+
+                    <label for="aeg">Aeg *</label>
+                    <input type="datetime-local" id="aeg" required>
+                </fieldset>
+
+                <!--Luuakse -->
+                <fieldset>
+                    <legend>Inimesed</legend>
+
+                    <label for="kutsutu">Kellele kutse? *</label>
+                    <input type="text" id="kutsutu" placeholder="nt Jaan" required>
+
+                    <label for="korraldaja">Korraldaja nimi *</label>
+                    <input type="text" id="korraldaja" placeholder="nt Mari Maasikas" required>
+
+                    <label for="korraldajaKontakt">Korraldaja kontakt</label>
+                    <input type="text" id="korraldajaKontakt" placeholder="e-post või telefon">
+
+                    <label for="kylalised">Kutsutud inimesed (üks nimi rea kohta)</label>
+                    <textarea id="kylalised" rows="4" placeholder="Jaan&#10;Kati&#10;Peeter"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Lisainfo</legend>
+
+                    <label for="lisainfo">Lisainfo (riietus jne)</label>
+                    <textarea id="lisainfo" rows="3" placeholder="nt Riietus: pidulik"></textarea>
+
+                    <label for="kaasa">Mida kaasa võtta?</label>
+                    <textarea id="kaasa" rows="2" placeholder="nt Hea tuju ja ujumisriided"></textarea>
+
+                    <div class="kaks-veergu">
+                        <div>
+                            <label for="vastamiseTahtaeg">Vasta hiljemalt</label>
+                            <input type="date" id="vastamiseTahtaeg">
+                        </div>
+                        <div>
+                            <label for="vastamiseKoht">Kuhu vastata?</label>
+                            <input type="text" id="vastamiseKoht" placeholder="nt mari@näide.ee">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Kaardi stiil</legend>
+                    <label for="stiil">Vali stiil</label>
+                    <select id="stiil">
+                        <option value="juhuslik">Juhuslik</option>
+                        <!-- siia on vaja erinevaid kaarte juurde meie poolt loodud voi kuskilt saadud-->
+                    </select>
+                </fieldset>
+
+                <div class="nupud">
+                    <button type="submit">Loo kaart</button>
+                    <button type="reset" class="teisene">Tühjenda</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="tulemus" class="tulemus" hidden>
+            <h2>Sinu kutse</h2>
+            <div id="kaart" class="kaart"></div>
+            <div class="nupud">
+                <button type="button" id="uusStiil" class="teisene">Proovi teist stiili</button>
+                <button type="button" id="prindi" class="teisene">Prindi</button>
+            </div>
+            <p class="markus">Kaart on salvestatud. Kõiki kaarte näed lehel „Olemasolevad kaardid“.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Uku Heinamaa, Richard Anmann, Tambet Mesikäpp</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

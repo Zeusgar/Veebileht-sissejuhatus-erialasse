@@ -1,0 +1,15 @@
+# Pythoni virtuaalkeskkond
+.venv/
+
+# Pythoni vahemälu
+__pycache__/
+*.pyc
+
+# Andmebaas ja päris kasutajaandmed
+andmed/*.sqlite3
+andmed/*.db
+
+# Redaktori ja OS-i failid
+.vscode/
+.DS_Store
+Thumbs.db
